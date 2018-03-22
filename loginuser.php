@@ -1,17 +1,6 @@
 <?php
 if(isset($_POST['logging']) && isset($_POST['username']) && isset($_POST['password'])){
-  $servername = "localhost";
-  $username = "root";
-  $password = "1Amafkd1dy0ukn0wthat?";
-  $db = "mydb";
-
-  // Create connection
-  $conn = new mysqli($servername, $username, $password, $db);
-
-  // Check connection
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  }
+  include("connectdb.php");
   $query = $conn->prepare("SELECT * FROM users WHERE username=?;");
   $query->bind_param('s', $_POST['username']);
   $query->execute();
