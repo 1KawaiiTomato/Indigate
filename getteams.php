@@ -1,18 +1,7 @@
 <?php
 if(isset($_SESSION['id'])){
 
-  $servername = "localhost";
-  $username = "root";
-  $password = "1Amafkd1dy0ukn0wthat?";
-  $db = "mydb";
-
-  // Create connection
-  $conn = new mysqli($servername, $username, $password, $db);
-
-  // Check connection
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  }
+  include("connectdb.php");
 
   $sql = "SELECT team_id FROM users_team WHERE users_id=$_SESSION[id];";
   $result = $conn->query($sql);
