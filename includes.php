@@ -17,7 +17,8 @@ if(isset($_SESSION['id'])){
   if($color['bgColor'] !== NULL){
     echo "<script>
     function changeBackground(){
-      document.body.style.background = \"". $color['bgColor'] ."\";
+      //document.body.style.background = \"". $color['bgColor'] ."\";
+      document.body.style.background = \"linear-gradient(to top, ". $color["bgColor"] .", white)\";
     }
     </script>";
   }
