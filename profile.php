@@ -19,7 +19,7 @@
           <script type="text/javascript">
             function setNewBgColor(sid) {
               var color = document.getElementById("bgColorPicker").value;
-              document.body.style.background = "linear-gradient(to top, "+ color +", white)";
+              document.body.style.background = "linear-gradient(to left, "+ color +", white)";
               var xhttp = new XMLHttpRequest();
               xhttp.onreadystatechange = function() {
                   if (this.readyState == 4 && this.status == 200) {
