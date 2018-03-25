@@ -113,7 +113,7 @@ function clean(){
 }
 
 function generateQuery(table) {
-  return "SELECT * FROM "+ table +" WHERE " + SearchColumn + " LIKE '%25"+ SearchField +"%25';";
+  return "SELECT * FROM "+ table +" WHERE " + SearchColumn + " LIKE '%25"+ SearchField +"%25' LIMIT 100;";
 }
 
 function closeAll() {

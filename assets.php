@@ -10,7 +10,7 @@ if(!isset($_SESSION['id']) || !$_GET['tid']){
   <head>
     <?php include 'includes.php'; ?>
   </head>
-  <body>
+  <body onload="changeBackground();">
     <?php include 'menu.php'; ?>
     <?php include 'getcurrentteam.php'; ?>
     <div class="container-fluid">
