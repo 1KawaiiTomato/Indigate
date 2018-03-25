@@ -4,7 +4,7 @@
   <head>
     <?php include 'includes.php'; ?>
   </head>
-  <body>
+  <body onload="changeBackground();">
     <?php include 'menu.php'; ?>
     <div class="container-fluid">
       <h1>Administrator tools</h1><hr>

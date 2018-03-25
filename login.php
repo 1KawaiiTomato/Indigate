@@ -10,7 +10,7 @@ if(isset($_SESSION['id'])){
   <head>
     <?php include 'includes.php'; ?>
   </head>
-  <body>
+  <body onload="changeBackground();">
     <?php include 'menu.php'; ?>
     <div class="fluid-container">
       <div class="row">

@@ -5,7 +5,7 @@
   <head>
     <?php include 'includes.php'; ?>
   </head>
-  <body>
+  <body onload="changeBackground();">
     <?php include 'getcurrentteam.php'; ?>
     <?php include 'menu.php'; ?>
     <div class="container-fluid">
